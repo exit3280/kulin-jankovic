@@ -1,0 +1,86 @@
+.container
+  @include outer-container
+
+.section
+  @include outer-container
+  margin-top: 3em
+
+  .span6
+    @include span-columns(6)
+    //background: pink
+
+    img
+      width: 100%
+
+    h2
+      margin-top: 0
+
+  .span3
+    @include span-columns(3)
+
+.span36
+  @include span-columns(3 of 6)
+
+.span26
+  @include span-columns(2 of 6)
+
+input
+  width: 100%
+  padding: 15px 12px
+  border: none
+
+textarea
+  width: 100%
+  resize: none
+  padding: 15px 12px
+  border: none
+
+.kontakt
+  text-align: center
+
+.posalji
+  input
+    padding: 15px 30px
+    font-weight: bold
+    width: auto
+    text-transform: uppercase
+    float: right
+
+    background-color: #BD5248
+    color: #020f14
+    transition: all 0.5s ease
+
+    &:hover
+      background-color: #020f14
+      color: #BD5248
+
+.pull-right
+  float: right
+
+.pull-left
+  float: left
+
+.kontakti
+  .section
+    margin-top: 0
+
+  p
+    margin-bottom: 10px
+
+.empty
+  margin-top: 35px
+
+.narudzba-button
+  padding: 15px 30px
+  font-weight: bold
+  width: auto
+  text-transform: uppercase
+  float: right
+
+  background-color: #BD5248
+  color: #020f14
+  transition: all 0.5s ease
+
+  &:hover
+    background-color: #020f14
+    color: #BD5248
